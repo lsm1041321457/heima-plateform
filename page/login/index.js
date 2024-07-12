@@ -11,12 +11,12 @@ document.querySelector('.btn').addEventListener('click', () => {
   const form = document.querySelector('.login-form')
   const data = serialize(form, { hash: true, empty: true })
   console.log(data)
-  if (data.mobile.length !== 12) {
-    myAlert(false, '手机号长度要12位')
+  if (data.mobile.length !== 11) {
+    myAlert(false, '手机号长度要11位')
     return
   }
-  if (data.code.length !== 7) {
-    myAlert(false, '验证码长度要7位')
+  if (data.code.length !== 6) {
+    myAlert(false, '验证码长度要6位')
     return
   }
 
