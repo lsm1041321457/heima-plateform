@@ -15,8 +15,8 @@ document.querySelector('.btn').addEventListener('click', () => {
     myAlert(false, '手机号长度要12位')
     return
   }
-  if (data.code.length !== 6) {
-    myAlert(false, '验证码长度要6位')
+  if (data.code.length !== 7) {
+    myAlert(false, '验证码长度要7位')
     return
   }
 
